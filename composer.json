@@ -1,6 +1,8 @@
 {
     "name": "saiffil/infusionsoft",
-    "description": "",
+    "description": "Infusionsoft iSDK for Laravel 4",
+    "keywords": ["laravel", "infusionsoft", "isdk"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Saiffil Fariz Mohamad Yusuff",
