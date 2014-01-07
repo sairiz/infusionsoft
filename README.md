@@ -25,4 +25,4 @@ Example :
 
 `Fuse::loadCon(1);`
 
-`Fuse::dsQuery('Contact',100,0,['Id' => %],['Id','FirstName'])`
+`Fuse::dsQuery('Contact',100,0,['Id' => %],['Id','FirstName']);`
