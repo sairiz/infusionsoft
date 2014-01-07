@@ -13,9 +13,9 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	/**
-	 * Boostrap the application events.
+	 * Bootstrap the application events.
 	 * 
-	 * @return  void
+	 * @return void
 	 */
 	public function boot()
 	{
