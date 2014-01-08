@@ -29,7 +29,7 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['infusionsoft'] = $this->app->share(function($app)
+		$this->app['infusionsoft'] = $this->app->share(function()
 		{
 			return (new Infusionsoft)->isdk();
 		});
