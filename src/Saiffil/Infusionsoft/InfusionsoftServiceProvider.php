@@ -50,5 +50,4 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	{
 		return array('infusionsoft');
 	}
-
 }

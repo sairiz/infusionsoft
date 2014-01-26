@@ -3,8 +3,6 @@
 use Config;
 use iSDK;
 
-require_once(__DIR__.'/isdk.php');
-
 class Infusionsoft {
 
 	/**
