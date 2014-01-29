@@ -1,5 +1,3 @@
 <?php
 
-return array(
-	'appName' => 'APPNAME', 'apiKey' => 'APIKEY'
-);
+return ['appName' => 'APPNAME', 'apiKey' => 'APIKEY'];

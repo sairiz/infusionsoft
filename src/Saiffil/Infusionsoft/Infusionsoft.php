@@ -12,12 +12,7 @@ class Infusionsoft {
 	 */
 	public function isdk()
 	{
-		$appName =  Config::get('infusionsoft::appName');
-		$apiKey =  Config::get('infusionsoft::apiKey');
-
 		$app = new iSDK;
-		$app->cfgCon($appName, $apiKey);
-
-		return $app;
+		return $app->cfgCon(Config::get('infusionsoft::appName'), Config::get('infusionsoft::apiKey'));
 	}
 }
