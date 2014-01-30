@@ -13,6 +13,9 @@ class Infusionsoft {
 	public function isdk()
 	{
 		$app = new iSDK;
-		return $app->cfgCon(Config::get('infusionsoft::appName'), Config::get('infusionsoft::apiKey'));
+		
+		$app->cfgCon(Config::get('infusionsoft::appName'), Config::get('infusionsoft::apiKey'));
+
+		return $app;
 	}
 }
