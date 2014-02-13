@@ -1,5 +1,5 @@
-Infusionsoft iSDK for Laravel 4
-===============================
+Infusionsoft Official iSDK Wrapper for Laravel 4
+================================================
 
 
 Installation :

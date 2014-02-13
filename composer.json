@@ -13,13 +13,17 @@
         "php": ">=5.4.0",
         "illuminate/support": "4.1.x"
     },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },    
     "autoload": {
         "classmap": [
-            "src/isdk.php"
+            "src/isdk.php",
+            "tests/TestCase.php"
         ],
         "psr-4": {
             "Saiffil\\Infusionsoft\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

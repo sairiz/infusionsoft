@@ -2,6 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
+use iSDK;
 
 class InfusionsoftServiceProvider extends ServiceProvider {
 
@@ -19,7 +20,7 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('saiffil/infusionsoft');
+		$this->package('saiffil/infusionsoft', null, __DIR__);
 	}
 
 	/**
@@ -29,15 +30,19 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['infusionsoft'] = $this->app->share(function()
+		$this->app['infusionsoft'] = $this->app->share(function($app)
 		{
-			return (new Infusionsoft)->isdk();
+			$fuse = new iSDK;
+
+			$fuse->cfgCon($app['config']['infusionsoft::appName'], $app['config']['infusionsoft::apiKey']);
+
+			return $fuse;
 		});
 
 		$this->app->booting(function()
 		{
 			$loader = AliasLoader::getInstance();
-			$loader->alias('Fuse','Saiffil\Infusionsoft\Facades\Infusionsoft');
+			$loader->alias('Fuse', 'Saiffil\Infusionsoft\Facades\Infusionsoft');
 		});
 	}
 
@@ -48,6 +53,6 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return ['infusionsoft'];
+		return array('infusionsoft');
 	}
 }
