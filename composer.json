@@ -1,11 +1,11 @@
 {
-    "name": "saiffil/infusionsoft",
+    "name": "sairiz/infusionsoft",
     "description": "Infusionsoft Official iSDK Wrapper for Laravel 4",
     "keywords": ["laravel", "infusionsoft", "isdk"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Saiffil Fariz Mohamad Yusuff",
+            "name": "Saiffil Fariz",
             "email": "saiffil@mtouch.my"
         }
     ],
@@ -22,7 +22,7 @@
             "tests/TestCase.php"
         ],
         "psr-4": {
-            "Saiffil\\Infusionsoft\\": "src/"
+            "Sairiz\\Infusionsoft\\": "src/"
         }
     },
     "minimum-stability": "stable"

@@ -1,4 +1,4 @@
-<?php namespace Saiffil\Infusionsoft;
+<?php namespace Sairiz\Infusionsoft;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
@@ -20,7 +20,7 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('saiffil/infusionsoft', null, __DIR__);
+		$this->package('sairiz/infusionsoft', null, __DIR__);
 	}
 
 	/**
@@ -42,7 +42,7 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 		$this->app->booting(function()
 		{
 			$loader = AliasLoader::getInstance();
-			$loader->alias('Fuse', 'Saiffil\Infusionsoft\Facades\Infusionsoft');
+			$loader->alias('Fuse', 'Sairiz\Infusionsoft\Facades\Infusionsoft');
 		});
 	}
 

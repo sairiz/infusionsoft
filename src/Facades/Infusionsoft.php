@@ -1,4 +1,4 @@
-<?php namespace Saiffil\Infusionsoft\Facades;
+<?php namespace Sairiz\Infusionsoft\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
