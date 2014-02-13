@@ -48,6 +48,6 @@ class InfusionsoftServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('infusionsoft');
+		return ['infusionsoft'];
 	}
 }

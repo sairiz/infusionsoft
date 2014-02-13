@@ -1,6 +1,6 @@
 {
     "name": "saiffil/infusionsoft",
-    "description": "Infusionsoft iSDK for Laravel 4",
+    "description": "Infusionsoft Official iSDK Wrapper for Laravel 4",
     "keywords": ["laravel", "infusionsoft", "isdk"],
     "license": "MIT",
     "authors": [
@@ -17,8 +17,8 @@
         "classmap": [
             "src/isdk.php"
         ],
-        "psr-0": {
-            "Saiffil\\Infusionsoft": "src/"
+        "psr-4": {
+            "Saiffil\\Infusionsoft\\": "src/"
         }
     },
     "minimum-stability": "dev"
