@@ -1,7 +1,5 @@
 Infusionsoft Official iSDK Wrapper for Laravel 4
 ================================================
-
-
 [![Build Status](https://travis-ci.org/sairiz/infusionsoft.png?branch=master)](https://travis-ci.org/sairiz/infusionsoft)
 
 
