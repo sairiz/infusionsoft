@@ -1,6 +1,9 @@
 Infusionsoft Official iSDK Wrapper for Laravel 4
 ================================================
 
+[![Latest Stable Version](https://poser.pugx.org/sairiz/infusionsoft/v/stable.png)](https://packagist.org/packages/sairiz/infusionsoft) [![Total Downloads](https://poser.pugx.org/sairiz/infusionsoft/downloads.png)](https://packagist.org/packages/sairiz/infusionsoft) [![License](https://poser.pugx.org/sairiz/infusionsoft/license.png)](https://packagist.org/packages/sairiz/infusionsoft)
+
+
 
 Installation :
 ==============
