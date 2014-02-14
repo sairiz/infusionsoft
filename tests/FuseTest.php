@@ -2,7 +2,7 @@
 
 class FuseTest extends TestCase {
 
-	public function testMandrillIInstance()
+	public function testISDKInstance()
 	{
 		$this->assertContainsOnlyInstancesOf('iSDK', array(App::make('infusionsoft')) );
 	}
